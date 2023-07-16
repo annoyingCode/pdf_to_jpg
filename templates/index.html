@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(
+          9,
+          1fr
+        ); /* Adjust the number of columns as needed */
+        grid-gap: 10px; /* Adjust the gap between images as needed */
+      }
+
+      .grid-item img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      {% for image in jpg_files %}
+      <div class="grid-item">
+        <img
+          src="{{ url_for('static', filename=image) }}"
+          alt="{{ image_name }}"
+        />
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
