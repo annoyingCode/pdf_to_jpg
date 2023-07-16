@@ -3,4 +3,4 @@ This repository contains code to convert PDF files to JPG (or any other image fo
 
 You will need the following librariy and tool to successfully run the code.
 1. [pdf2image](https://pypi.org/project/pdf2image/)
-2. (https://github.com/oschwartz10612/poppler-windows)
+2. [poppler-windows](https://github.com/oschwartz10612/poppler-windows)
